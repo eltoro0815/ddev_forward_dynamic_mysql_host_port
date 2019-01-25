@@ -32,11 +32,12 @@ else
     
     if ([string]::IsNullOrEmpty($test))
     {
-        Write-Host -BackgroundColor Red ("Hat nicht geklappt.")
+        Write-Host -BackgroundColor Red ("There was an error. Visit https://woshub.com/port-forwarding-in-windows/ and analyze the prerequisites.")
     }
     else
     {
         Write-Host($test)
+        netsh interface portproxy show v4tov4
     }
 }
 
