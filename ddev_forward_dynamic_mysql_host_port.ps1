@@ -38,6 +38,7 @@ else
     {
         Write-Host($test)
         netsh interface portproxy show v4tov4
+        Write-Host -ForegroundColor Green  ("MySql Host Port succesfully forwarded to: " + $mysql_host_port_generated_by_ddev)
     }
 }
 
